@@ -1,5 +1,10 @@
 package com.kreattiewe.friendandroid;
 
+/**
+ * 
+ * Documentando esto :D
+ * 
+ */
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -45,10 +50,9 @@ public class home extends Activity {
 	    InputStream is = (InputStream)url.getContent();
 	    image = Drawable.createFromStream(is, "src");
 	} catch (MalformedURLException e) {
-	    // handle URL exception
+	
 	    image = null;
 	} catch (IOException e) {
-	    // handle InputStream exception
 	    image = null;
 	}
  
